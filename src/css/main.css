@@ -1,0 +1,7 @@
+/* Global / common styles */
+@import url("./common.css");
+
+/* Section styles */
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./footer.css");
