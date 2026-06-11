@@ -46,6 +46,7 @@ body {
   line-height: 1.5;
   color: var(--white);
   background-color: var(--japanese-laurel-lightest);
+  transition: color var(--anim);
 }
 
 main {
@@ -195,10 +196,97 @@ img {
 /* ------------ Button ------------ */
 
 .button {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--japanese-laurel);
+  box-shadow:
+    2px 7px 27px -4px var(--transparent) inset,
+    0 0 0 1px var(--japanese-laurel) inset;
+  transition:
+    background-color var(--anim),
+    color var(--anim),
+    box-shadow var(--anim);
 }
 
 .button:hover,
 .button:focus {
+  color: var(--neutral-darkest);
+  background-color: var(--white);
+  box-shadow:
+    2px 7px 27px -4px var(--transparent) inset,
+    0 0 0 1px var(--white) inset;
+}
+
+.button:active {
+  color: var(--neutral-darkest);
+  background-color: var(--white);
+  box-shadow:
+    2px 7px 27px -4px rgba(0, 0, 0, 0.15) inset,
+    0 0 0 1px var(--white) inset;
+}
+
+.button-secondary {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral-darkest);
+  background-color: var(--transparent);
+  box-shadow:
+    0 4px 4px 0 var(--transparent),
+    0 0 0 1px var(--opacity-neutral-darkest-15);
+  transition:
+    background-color var(--anim),
+    color var(--anim),
+    box-shadow var(--anim);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--white);
+  background-color: var(--japanese-laurel);
+}
+
+.button-secondary:active {
+  box-shadow:
+    0 4px 4px 0 rgba(0, 0, 0, 0.12),
+    0 0 0 1px var(--opacity-neutral-darkest-15);
+}
+
+.button-primary {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral-darkest);
+  background-color: var(--white);
+  box-shadow: 0 4px 4px 0 var(--transparent);
+  transition:
+    background-color var(--anim),
+    color var(--anim),
+    box-shadow var(--anim);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  color: var(--neutral-darkest);
+  background-color: var(--japanese-laurel-light);
+}
+
+.button-primary:active {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button.is-small,
+.button-secondary.is-small,
+.button-primary.is-small {
+  padding: 4px 10px;
 }
 
 /* ------------ Utilities ------------ */
