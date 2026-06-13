@@ -48,15 +48,14 @@ header {
 .text-regular-normal.is-header:active {
   opacity: 0.6;
 }
-.a-wrapper-92-32 {
+.a-wrapper-92-32.mobile-hide {
   min-width: 92px;
 }
-.button.is-header {
+/* .button.is-header {
   display: none;
-}
+} */
 @media (min-width: 768px) {
   .button.is-header {
-    display: block;
     padding: 4px 24px;
   }
 }

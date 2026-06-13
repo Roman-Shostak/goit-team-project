@@ -90,6 +90,12 @@ img {
   height: auto;
 }
 
+a.button,
+a.button-primary,
+a.button-secondar {
+  display: block;
+}
+
 /* ------------ Layout ------------ */
 
 .section {
@@ -332,4 +338,14 @@ img {
 .logo {
   fill: var(--white);
   display: block;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-hide {
+    display: block;
+  }
 }
