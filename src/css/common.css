@@ -336,6 +336,11 @@ a.button-secondar {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+/* ------------ Logo styles ------------ */
+.logo {
+  fill: var(--white);
+  display: block;
+}
 
 .mobile-hide {
   display: none;
